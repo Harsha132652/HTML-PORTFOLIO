@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+
+ul {
+    position: fixed;
+    top: 10px;
+    right: 3px;
+    text-align: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+ul a li {
+    padding: 20px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5em;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+ul a li:hover {
+    transform: scale(1.2); /* Add zoom effect on hover */
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center-align the text */
+    z-index: 1000;
+    display: inline-block;
+}
+.text {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    width:100%;
+    white-space: nowrap;
+    overflow:hidden;
+    animation: typing 1.5s steps(18),
+    cursor .2s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{ border-color:transparent}
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+.text-box{
+    color: #fff;
+    position: absolute;
+    padding-left :5%;
+    bottom: 8%;
+
+}
+.text-box p{
+    font-size: 45px;
+    font-weight: 600;
+    opacity: 70%;
+}
+.text-box h1{
+    font-weight: 10px;
+    font-size: 150px;
+    font-family: 'Times New Roman';
+    opacity: 80%;
+    line-height: 2px;
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+    background: url(images/back.png);
+    background-clip: text;
+    -webkit-background-clip : text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back {
+    100%{
+    background-position: 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.text-box a{
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20x;
+    border: 2px solid #fff;
+}
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+    list-style: none;
+    font-size: 1.2em;
+    
+}
+.social-icons a{
+    color: #fff;
+    text-decoration: none;
+}
+button{
+    color:black;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 1em;
+    font-weight: bold;
+}

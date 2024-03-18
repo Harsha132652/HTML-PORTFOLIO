@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+        margin: 0;
+        padding: 0;
+        background-image: url('harshaf2.JPG'); 
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+    
+}
+.container{
+    color: white;
+    position: relative; 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 70%;
+    padding: 20px;
+}
+.container h1{
+    font-size: 3em;
+}
+.container h2{
+    font-size: 2em;
+}
+.container p{
+    font-size: 1.2em;
+}
+ul {
+    text-align: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+ul li {
+    padding: 20px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5em;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+ul li:hover {
+    transform: scale(1.2); /* Add zoom effect on hover */
+}
+button{
+    color:black;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 1em;
+    font-weight: bold;
+}

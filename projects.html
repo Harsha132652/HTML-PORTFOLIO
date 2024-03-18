@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view point" content="width=device-width,initial-scale=1.0">
+        <title> Projects</title>
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </head>
+    <body>
+        <canvas id="stars"></canvas>
+        <div class="bar">
+            <ul>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="./projects.html"><li><button>PROJECTS</button></li></a>
+                <a href="Aboutme.html"><li>ABOUT ME</li></a>
+                <a href="contactme.html"><li>CONTACT </li></a>
+            </ul>
+        </div>
+        <section class="sec-01">
+            <div class="container">
+                <h2 class="main-title">HealthEase</h2>
+                <div class="content">
+                    <div class="images">
+                        <img src="app.PNG" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>HealthEase Application</h3>
+                        <p>
+                            "Crafted a sleek and intuitive frontend interface for an Android application 
+                            using Android Studio. Designed to enhance user experience, 
+                            the frontend features modern UI elements, smooth navigation,
+                             and seamless integration with backend functionalities. 
+                             Created with a focus on simplicity and usability,
+                             ensuring optimal engagement and satisfaction for end users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-02">
+            <div class="container">
+                <h2 class="section-title">Virtual Mouse</h2>
+                <div class="content">
+                    <div class="images">
+                        <img src="virtual mouse.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h3>Virtual Mouse</h3>
+                        <p>
+                            Developed a virtual mouse system using OpenCV for hand tracking. 
+                            Enables users to control the mouse cursor via webcam hand gestures.
+                            Implemented features include hand detection, 
+                            mapping hand movements to cursor actions, and recognizing gestures for clicking and dragging
+                            Smooth operation is ensured through optimized algorithms and real-time processing,
+                             providing users with a seamless and responsive virtual mouse experience. The system's efficiency allows for precise cursor control,
+                             enhancing productivity and user satisfaction..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-03">
+            <div class="container">
+                <h3 class="section-title">Get In Touch</h3>
+                <div class="content">
+                    <div class="media-info">
+                        <li><a href="https://www.linkedin.com/in/harsha-vardhan-reddy-narreddula-6b807a1b8/" class="icon"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                        <li><a href="https://x.com/reddy1326?t=5xF_m_awp-bRKU1qH2_kZw&s=09" class="icon"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/harshareddy1326?utm_source=qr&igsh=MXhmeXYzbHhsY25xNw==" class="icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/share/y6t7EkbVtXMUdntu/?mibextid=qi2Omg" class="icon"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://github.com/Harsha132652" class="icon"><i class="fab fa-github"></i> GitHub</a></li>
+
+                    </div>
+                    <div class="images">
+                        <img src="harsha.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            ScrollReveal({
+                reset: true ,
+                distance: '60px',
+                duration: 1800,
+                delay:400
+                
+            });
+            ScrollReveal().reveal('.main-title, .section-title',{delay:400,origin:'left'});
+            ScrollReveal().reveal('.sec-01 .images,.sec-02 .images',{delay:600,origin:'bottom'});
+            ScrollReveal().reveal('.text-box',{delay:600,origin:'right'});
+            ScrollReveal().reveal('.media-info li',{delay:500,origin:'left', interval:200});
+            ScrollReveal().reveal('.sec-03 .images',{delay:800,origin:'right'});
+
+
+
+        </script>
+    </body>
+    <script src="home.js"></script>
+</html>
